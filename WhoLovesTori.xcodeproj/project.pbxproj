@@ -11,6 +11,7 @@
 		5FF9DB8E2861CA7C001DC131 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF9DB8D2861CA7C001DC131 /* ContentView.swift */; };
 		5FF9DB902861CA7F001DC131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FF9DB8F2861CA7F001DC131 /* Assets.xcassets */; };
 		5FF9DB932861CA7F001DC131 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FF9DB922861CA7F001DC131 /* Preview Assets.xcassets */; };
+		5FF9DB9C2861CB10001DC131 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF9DB9B2861CB10001DC131 /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		5FF9DB8D2861CA7C001DC131 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5FF9DB8F2861CA7F001DC131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FF9DB922861CA7F001DC131 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5FF9DB9B2861CB10001DC131 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				5FF9DB8B2861CA7C001DC131 /* WhoLovesToriApp.swift */,
+				5FF9DB9B2861CB10001DC131 /* Store.swift */,
 				5FF9DB8D2861CA7C001DC131 /* ContentView.swift */,
 				5FF9DB8F2861CA7F001DC131 /* Assets.xcassets */,
 				5FF9DB912861CA7F001DC131 /* Preview Content */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FF9DB9C2861CB10001DC131 /* Store.swift in Sources */,
 				5FF9DB8E2861CA7C001DC131 /* ContentView.swift in Sources */,
 				5FF9DB8C2861CA7C001DC131 /* WhoLovesToriApp.swift in Sources */,
 			);

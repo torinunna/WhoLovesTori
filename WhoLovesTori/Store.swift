@@ -11,6 +11,7 @@ import Foundation
 struct ProductUI {
     
     var id: String = UUID().uuidString
+    var emoji: String = "🧸"
     var displayPrice: String = "₩1,000"
     var type: String {
         willSet {
@@ -20,12 +21,13 @@ struct ProductUI {
     var displayName: String = "Initial display Name"
     var description: String = "Initial Description"
     
-    init(tuple:(String, String, String, String, String)) {
+    init(tuple:(String, String, String, String, String, String)) {
         id = tuple.0
-        displayPrice = tuple.1
-        type = tuple.2
-        displayName = tuple.3
-        description = tuple.4
+        emoji = tuple.1
+        displayPrice = tuple.2
+        type = tuple.3
+        displayName = tuple.4
+        description = tuple.5
     }
     
     static let types_: Set = ["Consumable", "Auto-Renewalbe", "Free"]
@@ -36,45 +38,47 @@ struct ProductUI {
 
 class Store: ObservableObject {
     
-    static let Tories = [
+    static let tories = [
         
 //         id . displayPrice . type . displayName . description
-        ("Tori.lowQuality", "무료", "Free", "저화질의 토리", "저화질일수록 뽀짝한 토리"),
-        ("Tori.random", "₩100", "Consumable", "5토리", "랜덤으로 5장의 토리")
+        ("Tori.lowQuality", "🆓", "무료", "Free", "저화질의 토리", "저화질일수록 뽀짝한 토리"),
+        ("Tori.random", "🎲", "₩100", "Consumable", "5토리", "랜덤으로 5장의 토리")
         
     ]
     
     static let subscriptions = [
         
-//         id . displayPrice . type . displayName . description
-        ("Tori.daily", "₩1,000", "Auto-Renewable", "하루토리", "한 달간 매일 토리를 만나요"),
-        ("Tori.weekly", "1,000", "Auto-Renewable", "주간토리", "한 달간 매주 토리를 만나요"),
-        ("Tori.monthly", "₩1,000", "Auto-Renewable", "월간토리", "3개월간 매월 토리를 만나요"),
+//         id . emoji . displayPrice . type . displayName . description
+        ("Tori.daily", "1️⃣", "₩1,000", "Auto-Renewable", "하루토리", "한 달간 매일 토리를 만나요"),
+        ("Tori.weekly", "7️⃣", "1,000", "Auto-Renewable", "주간토리", "한 달간 매주 토리를 만나요"),
+        ("Tori.monthly", "🗓", "₩1,000", "Auto-Renewable", "월간토리", "3개월간 매월 토리를 만나요"),
     ]
     
     static let extraTories = [
         
-//         id . displayPrice . type . displayName . description
-        ("Tori.video", "₩100", "Consumable", "움직이는 토리", "움직이는 토리를 만나요"),
-        ("Tori.ofTheDay", "₩100", "Consumable", "오늘의 토리", "오늘의 토리 :)")
+//         id . emoji. displayPrice . type . displayName . description
+        ("Tori.moving", "📹", "₩300", "Consumable", "움직이는 토리", "움직이는 토리를 만나요 x3"),
+        ("Tori.ofTheDay", "🧸", "₩100", "Consumable", "오늘의 토리", "오늘의 토리 x5 :)")
     ]
     
     static let error = [
     
-//         id . displayPrice . type . displayName . description
-        (UUID().uuidString, "$error", "type Error", "Bad prdClass", "Parameter is wrong - Bad prdClass")
+//         id . emoji . displayPrice . type . displayName . description
+        (UUID().uuidString, "‽", "$error", "type Error", "Bad prdClass", "Parameter is wrong - Bad prdClass")
     ]
     
     static func PreviewProductUIs(_ prdClass: String, _ count: Int) -> [ProductUI] {
+        
         var rpd = [ProductUI]()
+        
         switch(prdClass) {
-        case "extra":
+        case "extraTories":
             for i in 0..<count {
                 rpd.append(ProductUI(tuple: Store.extraTories[i]))
             }
-        case "Tories":
+        case "tories":
             for i in 0..<count {
-                rpd.append(ProductUI(tuple: Store.Tories[i]))
+                rpd.append(ProductUI(tuple: Store.tories[i]))
             }
         case "subscriptions":
             for i in 0..<count {

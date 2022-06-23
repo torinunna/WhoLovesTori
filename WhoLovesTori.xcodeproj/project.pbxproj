@@ -7,20 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F7A25D7286360E4009F2819 /* BuyButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A25D6286360E4009F2819 /* BuyButtonStyle.swift */; };
+		5F7A25D9286365EE009F2819 /* MyToriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A25D8286365EE009F2819 /* MyToriesView.swift */; };
+		5FC5D23A286441CA004FA1F4 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC5D239286441CA004FA1F4 /* ProductDetailView.swift */; };
+		5FC5D23E286455AC004FA1F4 /* ExtraSupplyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC5D23D286455AC004FA1F4 /* ExtraSupplyView.swift */; };
+		5FC5D240286492DA004FA1F4 /* ExtraStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC5D23F286492DA004FA1F4 /* ExtraStoreView.swift */; };
+		5FC5D2422864955D004FA1F4 /*  ExtraProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC5D2412864955D004FA1F4 /*  ExtraProductView.swift */; };
 		5FF9DB8C2861CA7C001DC131 /* WhoLovesToriApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF9DB8B2861CA7C001DC131 /* WhoLovesToriApp.swift */; };
 		5FF9DB8E2861CA7C001DC131 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF9DB8D2861CA7C001DC131 /* ContentView.swift */; };
 		5FF9DB902861CA7F001DC131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FF9DB8F2861CA7F001DC131 /* Assets.xcassets */; };
 		5FF9DB932861CA7F001DC131 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FF9DB922861CA7F001DC131 /* Preview Assets.xcassets */; };
 		5FF9DB9C2861CB10001DC131 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF9DB9B2861CB10001DC131 /* Store.swift */; };
+		5FF9DBA028621F46001DC131 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF9DB9F28621F46001DC131 /* StoreView.swift */; };
+		5FF9DBA22862274B001DC131 /* ListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF9DBA12862274B001DC131 /* ListCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F7A25D6286360E4009F2819 /* BuyButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyButtonStyle.swift; sourceTree = "<group>"; };
+		5F7A25D8286365EE009F2819 /* MyToriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyToriesView.swift; sourceTree = "<group>"; };
+		5FC5D239286441CA004FA1F4 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		5FC5D23D286455AC004FA1F4 /* ExtraSupplyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraSupplyView.swift; sourceTree = "<group>"; };
+		5FC5D23F286492DA004FA1F4 /* ExtraStoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraStoreView.swift; sourceTree = "<group>"; };
+		5FC5D2412864955D004FA1F4 /*  ExtraProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ExtraProductView.swift"; sourceTree = "<group>"; };
 		5FF9DB882861CA7C001DC131 /* WhoLovesTori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhoLovesTori.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF9DB8B2861CA7C001DC131 /* WhoLovesToriApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoLovesToriApp.swift; sourceTree = "<group>"; };
 		5FF9DB8D2861CA7C001DC131 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5FF9DB8F2861CA7F001DC131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FF9DB922861CA7F001DC131 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5FF9DB9B2861CB10001DC131 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		5FF9DB9F28621F46001DC131 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
+		5FF9DBA12862274B001DC131 /* ListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,14 @@
 				5FF9DB8B2861CA7C001DC131 /* WhoLovesToriApp.swift */,
 				5FF9DB9B2861CB10001DC131 /* Store.swift */,
 				5FF9DB8D2861CA7C001DC131 /* ContentView.swift */,
+				5FF9DB9F28621F46001DC131 /* StoreView.swift */,
+				5FF9DBA12862274B001DC131 /* ListCellView.swift */,
+				5F7A25D8286365EE009F2819 /* MyToriesView.swift */,
+				5FC5D239286441CA004FA1F4 /* ProductDetailView.swift */,
+				5FC5D23F286492DA004FA1F4 /* ExtraStoreView.swift */,
+				5FC5D2412864955D004FA1F4 /*  ExtraProductView.swift */,
+				5FC5D23D286455AC004FA1F4 /* ExtraSupplyView.swift */,
+				5F7A25D6286360E4009F2819 /* BuyButtonStyle.swift */,
 				5FF9DB8F2861CA7F001DC131 /* Assets.xcassets */,
 				5FF9DB912861CA7F001DC131 /* Preview Content */,
 			);
@@ -140,9 +164,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F7A25D7286360E4009F2819 /* BuyButtonStyle.swift in Sources */,
+				5FC5D23A286441CA004FA1F4 /* ProductDetailView.swift in Sources */,
 				5FF9DB9C2861CB10001DC131 /* Store.swift in Sources */,
+				5FC5D240286492DA004FA1F4 /* ExtraStoreView.swift in Sources */,
+				5FC5D2422864955D004FA1F4 /*  ExtraProductView.swift in Sources */,
+				5FC5D23E286455AC004FA1F4 /* ExtraSupplyView.swift in Sources */,
+				5F7A25D9286365EE009F2819 /* MyToriesView.swift in Sources */,
 				5FF9DB8E2861CA7C001DC131 /* ContentView.swift in Sources */,
+				5FF9DBA028621F46001DC131 /* StoreView.swift in Sources */,
 				5FF9DB8C2861CA7C001DC131 /* WhoLovesToriApp.swift in Sources */,
+				5FF9DBA22862274B001DC131 /* ListCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

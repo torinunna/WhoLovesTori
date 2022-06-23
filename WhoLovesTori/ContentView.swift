@@ -10,10 +10,16 @@ import SwiftUI
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.light)
+        ContentView()
+            .preferredColorScheme(.dark)
     }
 }
 
 struct ContentView: View {
+    
+    @StateObject var __store: Store = Store()
+    
     var body: some View {
         NavigationView {
             ScrollView(showsIndicators: false) {
@@ -31,32 +37,32 @@ struct ContentView: View {
                             .padding(.bottom, 15)
                         
                         navShopLink
-                        myToriLink
+                        myToriesLink
                     }
                 }
             }
-        }
+        }.environmentObject(__store)
     }
 
 var navShopLink: some View {
-//    let nvl = NavigationLink(destination: StoreView) {
+    let nvl = NavigationLink(destination: StoreView()) {
         Text("\(Image(systemName: "cart")) Shop")
             .font(.headline).foregroundColor(.white)
             .padding()
             .frame(width: 300, height: 40)
             .background(Color.blue).cornerRadius(15.0)
-//    }
-//    return nvl
+    }
+    return nvl
     }
     
-var myToriLink: some View {
-//        NavigationLink(destination: myCarsView()) {
+var myToriesLink: some View {
+        NavigationLink(destination: MyToriesView()) {
         Text("\(Image(systemName: "photo")) My Tories")
                 .font(.headline).foregroundColor(.white)
                 .padding()
                 .frame(width: 300, height: 40)
                 .background(Color.blue).cornerRadius(15.0)
-//        }
+        }
     }
 
 }
